@@ -32,6 +32,6 @@ ZHE - Дополнительное отопление\n
 ZV - Центральная блокировка замков
     </string>
     <string name="admob_app_id">ca-app-pub-6268237260036254~1288014560</string>
-    <string name="admob_banner_id">footerca-app-pub-6268237260036254/8396773420</string>
+    <string name="admob_banner_id">ca-app-pub-6268237260036254/8396773420</string>
     <string name="admob_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
 </resources>

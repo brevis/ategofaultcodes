@@ -37,7 +37,10 @@ public class InfoActivity extends AppCompatActivity {
         // ad
         MobileAds.initialize(this, getString(R.string.admob_app_id));
         mAdView = (AdView) findViewById(R.id.adViewMain);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("818B80BB6E2BA8DAF815E8C288053108")
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
         if (mAdView != null) {
             mAdView.loadAd(adRequest);
         }
