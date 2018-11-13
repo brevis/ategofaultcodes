@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.craftific.ategofaultcodes">
-    ф
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".InfoActivity"></activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6268237260036254~1288014560"/>
     </application>
 
 </manifest>

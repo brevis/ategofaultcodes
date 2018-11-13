@@ -35,8 +35,6 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:alwaysDrawnWithCache="true"
-            android:paddingBottom="5dp"
-            android:paddingTop="1dp"
             app:adSize="BANNER"
             app:adUnitId="@string/admob_banner_id" />
 
