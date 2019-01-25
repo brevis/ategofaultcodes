@@ -13,12 +13,16 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -29,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     TextView filter;
     CustomAdapter mAdapter;
-    HashMap<String, HashMap<String, String>> faultCodesMap;
+    TreeMap<String, TreeMap<String, String>> faultCodesMap;
 
     private AdView mAdView;
 
@@ -94,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
      * Load data from json resource to hashmap
      */
     void loadFaultCodes() {
-        faultCodesMap = new HashMap<>();
+        faultCodesMap = new TreeMap<>();
 
         InputStream is = this.getResources().openRawResource(R.raw.atego_fault_codes);
         String json = null;
@@ -119,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             if (jsonData != null) {
                 Iterator<?> categories = jsonData.keys();
                 while (categories.hasNext()) {
-                    HashMap<String, String> categoriesData = new HashMap<>();
+                    TreeMap<String, String> categoriesData = new TreeMap<>();
 
                     String category = (String)categories.next();
                     JSONObject codesData;
@@ -164,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         while (categoriesIterator.hasNext()) {
             String category = (String) categoriesIterator.next();
             boolean isCategoryAdded = false;
-            HashMap<String, String> codesMap = faultCodesMap.get(category);
+            TreeMap<String, String> codesMap = faultCodesMap.get(category);
             Iterator<?> codesIterator = codesMap.keySet().iterator();
             while (codesIterator.hasNext()) {
                 String code = (String) codesIterator.next();
