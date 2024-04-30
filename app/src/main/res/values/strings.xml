@@ -31,7 +31,7 @@ WS - Система тех.ослуживания\n
 ZHE - Дополнительное отопление\n
 ZV - Центральная блокировка замков
     </string>
-    <string name="admob_app_id">ca-app-pub-6268237260036254~1288014560</string>
-    <string name="admob_banner_id">ca-app-pub-6268237260036254/8396773420</string>
-    <string name="admob_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_app_id">ca-app-pub-2510841848877598~4119207471</string>
+    <string name="admob_banner_id">ca-app-pub-2510841848877598/8383439124</string>
+    <string name="admob_test_banner_id">ca-app-pub-3940256099942544/9214589741</string>
 </resources>

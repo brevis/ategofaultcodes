@@ -1,6 +1,6 @@
 package com.craftific.ategofaultcodes;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
@@ -10,8 +10,6 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 public class InfoActivity extends AppCompatActivity {
-
-    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,16 +29,13 @@ public class InfoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         // scrollable textview
-        TextView tv = (TextView) findViewById(R.id.infoText);
+        TextView tv = findViewById(R.id.infoText);
         tv.setMovementMethod(new ScrollingMovementMethod());
 
         // ad
-        MobileAds.initialize(this, getString(R.string.admob_app_id));
-        mAdView = (AdView) findViewById(R.id.adViewMain);
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("818B80BB6E2BA8DAF815E8C288053108")
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .build();
+        MobileAds.initialize(this);
+        AdView mAdView = findViewById(R.id.adViewMain);
+        AdRequest adRequest = new AdRequest.Builder().build();
         if (mAdView != null) {
             mAdView.loadAd(adRequest);
         }
@@ -51,5 +46,4 @@ public class InfoActivity extends AppCompatActivity {
         onBackPressed();
         return true;
     }
-
 }

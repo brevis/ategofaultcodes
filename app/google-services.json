@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "717445451642",
+    "project_id": "ategofaultcodes",
+    "storage_bucket": "ategofaultcodes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717445451642:android:a839dc35eb86b05405d0c3",
+        "android_client_info": {
+          "package_name": "com.craftific.ategofaultcodes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn5yWhMf-ZKULU_95Bg8stgpDdLKiu9do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

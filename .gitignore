@@ -11,6 +11,7 @@
 /*/out
 /*/*/build
 /*/*/production
+/app/release/
 *.iws
 *.ipr
 *~

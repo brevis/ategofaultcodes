@@ -1,5 +1,6 @@
 package com.craftific.ategofaultcodes;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,10 +17,10 @@ public class CustomAdapter extends BaseAdapter {
     private static final int TYPE_ITEM = 0;
     private static final int TYPE_HEADER = 1;
 
-    private ArrayList<TransactionObject> mData = new ArrayList<TransactionObject>();
-    private TreeSet<Integer> sectionHeader = new TreeSet<Integer>();
+    private final ArrayList<TransactionObject> mData = new ArrayList<TransactionObject>();
+    private final TreeSet<Integer> sectionHeader = new TreeSet<Integer>();
 
-    private LayoutInflater mInflater;
+    private final LayoutInflater mInflater;
 
     public CustomAdapter(Context context) {
         mInflater = (LayoutInflater) context
@@ -62,6 +63,7 @@ public class CustomAdapter extends BaseAdapter {
         return position;
     }
 
+    @SuppressLint("InflateParams")
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
         int rowType = getItemViewType(position);
@@ -71,13 +73,14 @@ public class CustomAdapter extends BaseAdapter {
             switch (rowType) {
                 case TYPE_ITEM:
                     convertView = mInflater.inflate(R.layout.row_item, null);
-                    holder.textView = (TextView) convertView.findViewById(R.id.txtName);
+                    holder.textView = convertView.findViewById(R.id.txtName);
                     break;
                 case TYPE_HEADER:
                     convertView = mInflater.inflate(R.layout.header_item, null);
-                    holder.textView = (TextView) convertView.findViewById(R.id.textSeparator);
+                    holder.textView = convertView.findViewById(R.id.textSeparator);
                     break;
             }
+            assert convertView != null;
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
