@@ -1,35 +1,35 @@
 <resources>
-    <string name="app_name">Коды ATEGO</string>
-    <string name="app_title">Коды неисправностей ATEGO</string>
-    <string name="filter_placeholder">Поиск…</string>
-    <string name="menu_item_info">Полезная информация</string>
-    <string name="info_text">На автомобилях Mercedes коды ошибок в цифровом виде состоят из пяти цифр и выглядят примерно так: GS 2 3022, где GS-обозначает систему в которой возникла неисправность, это система управления коробкой передач. Далее идёт обозначение значимости неисправности: 0-это не очень серьёзная неисправность, 1-серьёзная и по возможности нужно попытаться устранить её самостоятельно или обратиться на сервисную станцию, 2-означает что эксплуатация автомобиля запрещена до устранения неисправности.\n\n
+    <string name="app_name">ATEGO Codes</string>
+    <string name="app_title">ATEGO Fault Codes</string>
+    <string name="filter_placeholder">Search…</string>
+    <string name="menu_item_info">Useful information</string>
+    <string name="info_text">On Mercedes cars, digital error codes consist of five digits and look something like this: GS 2 3022, where GS denotes the system in which the malfunction occurred, this is the gearbox control system. Next comes the designation of the significance of the malfunction: 0 is not a very serious malfunction, 1 is serious and, if possible, you should try to fix it yourself or contact a service station, 2 means that the operation of the car is prohibited until the malfunction is eliminated.\n\n
 
-Расшифровка обозначения некоторых блоков управления\n
-WS/FSS – Система технического обслуживания\n
-MR/PLD – Система управления впрыском\n
-BS/EPB – Система управления тормозами\n
-ABS – Антиблокировочная система\n
-FR/FMR – Система управления режимами движения\n
-NR/ENR – Система управления уровнем рамы\n
-INS – Система информации бортового компьютера, комбинация приборов\n
-GS/EPS – Система управления коробкой передач\n
-FLA – Система предпускового подогрева\n
-AGN - Автоматическая КП комерческих а\м\n
-BS - Управление тормозной системой\n
-EDW - Система противоугонной сигнализации\n
-FFB - Дистанционное радиоуправление\n
-KSA - Система комфортабельного открывания\закрывания\n
-KOM - Коммуникационный интерфейс\n
-MR/PLD - Система управления двигателем\n
-PSM - Параметрируемый спец.модуль\n
-SIR - Электронное оборудование правого сиденья\n
-SIL - Электронное оборудование левого сидения\n
-SRS - Система пассивной безопасности\n
-TCO - тахограф\n
-WS - Система тех.ослуживания\n
-ZHE - Дополнительное отопление\n
-ZV - Центральная блокировка замков
+Decoding the designation of some control units\n
+WS/FSS – Maintenance system\n
+MR/PLD – Injection control system\n
+BS/EPB – Brake control system\n
+ABS – Anti-lock braking system\n
+FR/FMR – Driving mode control system\n
+NR/ENR – Frame level control system\n
+INS – On-board computer information system, instrument cluster\n
+GS/EPS – Gearbox control system\n
+FLA – Pre-heating system\n
+AGN - Automatic transmission for commercial vehicles\n
+BS - Brake system control\n
+EDW - Anti-theft alarm system\n
+FFB - Radio remote control\n
+KSA - Comfort opening/closing system\n
+KOM - Communication interface\n
+MR/PLD - Engine management system\n
+PSM - Parameterizable special module\n
+SIR - Right seat electronics\n
+SIL - Left seat electronics seats\n
+SRS - Passive Restraint System\n
+TCO - Tachograph\n
+WS - Maintenance System\n
+ZHE - Additional Heating\n
+ZV - Central Locking
     </string>
     <string name="admob_app_id">ca-app-pub-2510841848877598~4119207471</string>
     <string name="admob_banner_id">ca-app-pub-2510841848877598/8383439124</string>
